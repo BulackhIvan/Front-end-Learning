@@ -1,11 +1,17 @@
+header {
+    background-color:#e960e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     background-color: antiquewhite;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 1px dotted gray;
     padding: 10px 10px 10px 10px;
 }
