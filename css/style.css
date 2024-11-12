@@ -1,0 +1,96 @@
+@import url("font.css");
+
+/* header {
+    background-color:#e960e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: medium;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(20, 19, 17);
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px dotted rgb(255, 0, 0);
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    padding: top, bottom = 10px;
+    padding: right, left = 5px;
+    color: #ffffff;
+} */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar main main"
+      "sidebar reviews reviews"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 60px 2fr 1fr 60px;
+    gap: 1em;
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    background-color: #0d5060;
+    color: #fff;
+  }
+
+  a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .cell1,
+  .cell2,
+  .cell3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cell1 {
+    grid-area: sidebar;
+    background-color: #1688a3;
+    color: white;
+  }
+
+  .cell2 {
+    grid-area: main;
+    background-color: #5babbe;
+    color: white;
+  }
+
+  .cell3 {
+    grid-area: reviews;
+    background-color: #add5de;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #0d5060;
+    color: #fff;
+  }
